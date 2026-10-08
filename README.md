@@ -1,6 +1,6 @@
 # PointPillars Interactive Explorer
 
-Web demo tiếng Việt để trình bày **PointPillars: Fast Encoders for Object Detection from Point Clouds**, Lang et al., arXiv:1812.05784v2 (2019). Đã đối chiếu PDF người dùng cung cấp, đặc biệt mục 2.1, 2.2, 3.1 và 4.2.
+Web **PointPillars: Fast Encoders for Object Detection from Point Clouds**, 
 
 ## Chạy ứng dụng
 
@@ -28,18 +28,7 @@ Build bao gồm kiểm tra TypeScript. Các gói, icon và tài nguyên được
 - Phím ← / →: chuyển bước; R: đặt lại camera. Nút toàn màn hình dùng Fullscreen API, Escape thoát.
 - Chuyển bước tự đặt góc nhìn thích hợp; sau đó có thể tự xoay.
 - Đổi cảnh, cạnh ô hoặc chế độ dữ liệu sẽ xóa selection cũ.
-- Thanh bên có thể cuộn trên màn hình thấp. Khuyến nghị 1366×768 trở lên.
-
-## Kịch bản thuyết trình ba phút
-
-| Thời gian | Bước | Thao tác và ý chính |
-|---|---|---|
-| 0:00–0:30 | Đám mây điểm | Bắt đầu trình diễn, xoay ô tô, chọn điểm. Mỗi điểm là `(x,y,z,r)`, không phải pixel. |
-| 0:30–1:00 | Pillar | Đổi cạnh ô từ 0,16 sang 0,48 m, so sánh số ô thực tính. Bật voxel để thấy chia thêm theo z ở vùng quanh pillar chọn. |
-| 1:00–1:30 | Đặc trưng | Quan sát tâm ô, trung bình điểm và các đường nối. Đọc vector 9 chiều; z vẫn được giữ. |
-| 1:30–2:00 | PFN | Giải thích Linear dùng chung → BatchNorm → ReLU. Mỗi cột là một kênh, max pooling gộp theo các điểm. |
-| 2:00–2:30 | Pseudo-image | Đổi kênh. Scatter đặt vector về vị trí ô. Pseudo-image là 64 kênh, không phải RGB; backbone minh họa nhiều tỉ lệ, upsample, concat. |
-| 2:30–3:00 | Hộp 3D | Chọn hộp, đọc tâm, kích thước, góc. Phân biệt hộp tham chiếu tổng hợp với kết quả mô hình nhập từ JSON. |
+- Thanh bên có thể cuộn trên màn hình thấp. Khuyến nghị 1366×768 trở lên
 
 ## Phạm vi khoa học và mô phỏng
 
