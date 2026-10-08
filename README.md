@@ -10,7 +10,14 @@ Yêu cầu Node.js 20.19+ hoặc 22.12+ (khuyến nghị Node 24).
 npm install
 npm run dev
 ```
+Nếu bị lỗi,Mở PowerShell với quyền Administrator (Nhấn chuột phải vào biểu tượng PowerShell -> chọn Run as administrator).
 
+Gõ lệnh sau rồi nhấn Enter:
+
+```sh
+powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
 Mở http://127.0.0.1:5173. Nếu PowerShell chặn `npm.ps1`, dùng `npm.cmd` thay `npm`.
 
 ```sh
